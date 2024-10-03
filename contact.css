@@ -108,7 +108,7 @@ section {
 .hero-text h5::after {
     position: absolute;
     content: "";
-    width: 22%;
+    width: 24%;
     height: 4px;
     background-color: purple;
     left: 0;
