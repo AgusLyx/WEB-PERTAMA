@@ -113,7 +113,7 @@ section {
 .hero-text h1::after {
     position: absolute;
     content: "";
-    width: 28%;
+    width: 30%;
     height: 4px;
     background-color: purple;
     left: 0;
