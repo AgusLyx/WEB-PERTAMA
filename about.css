@@ -294,7 +294,7 @@ section {
   .hero-text h1::after {
     position: absolute;
     content: "";
-    width: 40%;
+    width: 30%;
     height: 2px;
     background-color: purple;
     left: -0.5%;
