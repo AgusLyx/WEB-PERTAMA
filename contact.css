@@ -1,0 +1,382 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+header{
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 9%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+body{
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(-45deg, pink, purple, #0fb8b2, navy);
+  background-size: 400% 400%;
+  animation: bg 12s ease infinite;
+}
+
+@keyframes bg {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 100%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
+.ri-github-fill {
+  font-size: 40px;
+  font-style: 90px;
+  color: white;
+}
+
+.navlist {
+  display: flex;
+  list-style-type: none;
+}
+
+.navlist a{
+  color: white;
+  margin-left: 60px;
+  font-size: 30px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all .55s ease;
+}
+
+.navlist a:hover {
+  border-bottom: 2px solid white;
+}
+
+#menu-icon{
+  color: white;
+  font-size: 30px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+
+.wrapper {
+  height: 200px;
+  width: auto;
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+  align-items: center;
+  gap: 2rem;;
+}
+
+section {
+  padding: 0 19%;
+}
+
+.hero-text {
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  height: 800px;
+  width:700px;
+  margin: 0 0 5px;
+}
+
+.hero-text h5 {
+  position: relative;
+  color: white;
+  line-height: 1.5;
+  bottom: 7%;
+  font-size: 30px;
+}
+
+.hero-text h5::after {
+    position: absolute;
+    content: "";
+    width: 22%;
+    height: 4px;
+    background-color: purple;
+    left: 0;
+    bottom: 0;
+    border-radius: 5px;
+  }
+
+.hero-text h1 {
+  font-size: 40px;
+  font-style: 90px;
+  line-height: 1.5;
+  color: white;
+}
+
+.hero-text h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.hero-text p {
+  color: white;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: auto;
+  border-radius: 30px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.hero-text a {
+  display: inline-block;
+  color: white;
+  background: purple;
+  border: 1px solid transparent;
+  padding: 15px 30px;
+  line-height: 1.4;
+  font-size: 14px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  transition: all .55s ease;
+}
+
+.hero-text a:hover {
+  background: transparent;
+  border: 1px solid white;
+}
+
+.icons {
+  position: absolute;
+  top: 32%;
+  right: 46%;
+  padding: 0 5%;
+  transform: translateY(-50%);
+  display: flex;
+  
+}
+
+.icons a {
+  width: 100px;
+  height: auto;
+  
+}
+
+.icons i {
+  display: block;
+  margin: 26px 0;
+  font-size: 80px;
+  color: white;
+  transition: all .50s ease;
+}
+
+.icons i:hover {
+  color: purple;
+  transform: translateY(-5px);
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 6%;
+  right: 9%;
+}
+
+.scroll-down i {
+  display: black;
+  padding: 12px;
+  font-size: 25px;
+  color: white;
+  background: purple;
+  border-radius: 30px;
+  transition: all .50s ease;
+}
+
+.scroll-down i:hover {
+  transform: translateY(-5px);
+  
+}
+
+@media screen and (max-width: 476px) {
+  
+  .navlist {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 140px;
+    height: 25vh;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 20px;
+    transition: all .55s ease;
+    border-radius: 15px;
+    display: flex;
+    
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+  
+  .navlist a {
+    margin-left: 0;
+    display: block;
+    font-size: 20px;
+    margin: 7px 0;
+  }
+  
+  .navlist.open {
+    right: 0;
+  }
+  
+  .scroll-down {
+    display: none;
+  }
+  
+  body {
+  background-size: 100% 100%;
+  height: 100%;
+  }
+  
+  #menu-icon {
+    display: block;
+  }
+  
+  .wrapper {
+    height: auto;
+    width: auto;
+    gap: 1rem;
+    grid-template-columns: 2fr;
+    margin: 0 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .hero-text {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: auto;
+  }
+  
+  .hero-text a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 5px;
+    padding: 6px 15px;
+  }
+  
+  .hero-text h5 {
+    position: relative;
+    display: flex;
+    font-size: 20px;
+    line-height: 1.5;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    bottom: 500%;
+  }
+  
+  .hero-text h5::after {
+    position: absolute;
+    content: "";
+    width: 68%;
+    height: 4px;
+    background-color: purple;
+    left: 16%;
+    bottom: -5%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-text h1 {
+    font-size: 15px;
+  }
+  
+  .hero-text h4 {
+    font-size: 7px;
+  }
+  
+  .hero-text p {
+    font-size: 10px;
+  }
+  
+  .foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 170px;
+    width: auto;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+  
+  header {
+    height: 25px;
+  }
+  
+  .icons {
+    display: grid;
+    right: 36%;
+    top: 52%;
+  }
+  
+  .icons i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+  }
+  
+  .icons a {
+    height: 100px;
+    width: auto;
+  }
+  
+  body {
+    background: linear-gradient(-45deg, pink, purple, #0fb8b2, navy);
+  background-size: 400% 400%;
+  animation: bg 12s ease infinite;
+  }
+  
+  @keyframes bg {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 100%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+  
+}
