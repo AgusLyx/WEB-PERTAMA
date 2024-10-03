@@ -166,7 +166,7 @@ section {
   display: none;
 }
 
-.icons {
+/*.icons {
   position: absolute;
   top: 50%;
   padding: 0 9%;
@@ -184,7 +184,7 @@ section {
 .icons i:hover {
   color: purple;
   transform: translateY(-5px);
-}
+}*/
 
 .scroll-down {
   position: absolute;
