@@ -25,10 +25,24 @@ header{
 body{
   margin: 0;
   height: 100vh;
-  background: linear-gradient(#a619f8, #00f2fe);
+  background: linear-gradient(-45deg, pink, purple, #0fb8b2, navy);
+  background-size: 400% 400%;
+  animation: bg 12s ease infinite;
 }
 
-.logo {
+@keyframes bg {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 100%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
+.ri-github-fill {
   font-size: 40px;
   font-style: 90px;
   color: white;
@@ -84,8 +98,21 @@ section {
 }
 
 .hero-text h5 {
+  position: relative;
   color: white;
+  line-height: 1.5;
 }
+
+.hero-text h5::after {
+    position: absolute;
+    content: "";
+    width: 17%;
+    height: 4px;
+    background-color: purple;
+    left: 0;
+    bottom: 0;
+    border-radius: 5px;
+  }
 
 .hero-text h1 {
   font-size: 40px;
@@ -98,14 +125,14 @@ section {
   font-size: 18px;
   font-weight: 600;
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .hero-text p {
   color: white;
   font-size: 20px;
   line-height: 1.5;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .foto {
@@ -125,7 +152,7 @@ section {
   color: white;
   background: purple;
   border: 1px solid transparent;
-  padding: 12px 30px;
+  padding: 15px 30px;
   line-height: 1.4;
   font-size: 14px;
   border-radius: 20px;
@@ -187,13 +214,19 @@ section {
     right: -100%;
     width: 140px;
     height: 25vh;
-    background: purple;
+    /*background: purple;*/
     align-items: center;
     flex-direction: column;
     padding: 30px 20px;
     transition: all .55s ease;
     border-radius: 15px;
     display: flex;
+    
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   }
   
   .navlist a {
@@ -249,7 +282,20 @@ section {
   }
   
   .hero-text h5 {
+    position: relative;
     font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  .hero-text h5::after {
+    position: absolute;
+    content: "";
+    width: 40%;
+    height: 2px;
+    background-color: purple;
+    left: 0;
+    bottom: -5%;
+    border-radius: 5px;
   }
   
   .hero-text h1 {
@@ -263,7 +309,6 @@ section {
   .hero-text p {
     font-size: 10px;
   }
-  
   
   .foto {
     display: flex;
@@ -281,12 +326,26 @@ section {
     height: 25px;
   }
   
-  .logo {
-    font-size: 15px;
+  .icons {
+    left: -2%;
+    top: 30%;
+  }
+  
+  body {
+    background: linear-gradient(-45deg, pink, purple, #0fb8b2, navy);
+  background-size: 400% 400%;
+  animation: bg 12s ease infinite;
+  }
+  
+  @keyframes bg {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 100%;
+  }
+  100%{
+    background-position: 0% 50%;
   }
   
 }
-
-/*<div class="wrapper-foto">
-      <img src="img.jpg" class="foto">
-    </div>
