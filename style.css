@@ -347,10 +347,5 @@ section {
   100%{
     background-position: 0% 50%;
   }
-
-  @media screen and (max-width: 767px) {
-  .icons {
-    top: 50%;
-  }
   
 }
